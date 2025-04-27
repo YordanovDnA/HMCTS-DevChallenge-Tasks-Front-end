@@ -1,4 +1,3 @@
-// src/components/TaskList.jsx
 import axios from "axios";
 
 const TaskList = ({ tasks, onDeleteTask, refreshTasks }) => {
