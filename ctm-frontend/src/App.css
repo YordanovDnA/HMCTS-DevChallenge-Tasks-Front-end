@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -39,4 +38,23 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.date-input{
+  margin-left: 10px;
+  background-color: rgb(26, 24, 24);
+  border-radius: 5px;
+}
+
+label, th, .btn-sm{
+font-size: 13px;
+}
+
+.form-control, textarea, td, td > .form-select{
+  font-size: 11px;
+}
+
+#taskform-btn{
+  background-color: rgb(26, 24, 24);
+  color: white;
 }
