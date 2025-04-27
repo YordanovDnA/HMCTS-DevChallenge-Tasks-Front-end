@@ -4,6 +4,20 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
+  {env: {
+    browser: true,
+    es2021: true,
+    jest: true,   // 👈 THIS is important for test globals
+  },
+  extends: ["eslint:recommended", "plugin:react/recommended"],
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+  },
+  rules: {
+    // your rules here
+  }
+},
   { ignores: ['dist'] },
   {
     files: ['**/*.{js,jsx}'],
