@@ -1,8 +1,8 @@
-// src/pages/Home.jsx
+import * as React from "react";
 import { useState, useEffect } from "react";
 import { getAllTasks, createTask, deleteTask } from "../api/tasksApi";
 import TaskList from "../components/TaskList";
-import TaskForm from "../components/TaskForm";
+import TaskForm from "../components/taskForm";
 
 const Home = () => {
   const [tasks, setTasks] = useState([]);
