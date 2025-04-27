@@ -1,36 +1,60 @@
 # HMCTS-DevChallenge-Front-end
 
-**React app** built using **_Vite_**. Part of **Junior Software Developer** job application coding challange with **HMCTS**
+A **React** application built with **_Vite_**, providing a user interface for managing tasks.  
+Part of the **Junior Software Developer** coding challenge for **HMCTS**.
 
-For back-end API repository visit: https://github.com/YordanovDnA/HMCTS-DevChallenge-TasksAPI
+> For the back-end API repository, visit: [HMCTS-DevChallenge-TasksAPI](https://github.com/YordanovDnA/HMCTS-DevChallenge-TasksAPI)
 
-## Dependanices used:
+---
 
-- **_Vite-React_**: Web framework
+## Dependencies used
 
-- **_Axoios_**:
+- **_React (with Vite)_** – Front-end framework
+- **_Axios_** – For HTTP requests
+- **_Bootstrap 5_** – For styling and layout
+- **_Jest_** – For unit testing
+- **_React Testing Library_** – For component testing
 
-- **_Jest_**: For testing
+---
 
-**_Bootstrap 5_**: To make it pretty.
+## Installation and Setup
 
-## Installation and setup
+Clone the repository and install dependencies:
 
-Clone the repository and run:
-**`npm install`**
+```bash
+npm install
+```
 
-on the terminal using **VSCode** your prefered method.
+**_Make sure to navigate into the correct project folder._**
 
-### IMPORTANT: Relocate in folder _./ctm-frontend_
+```bash
+cd ctm-frontend
+```
 
-**`cd ctm-frontend`**
+##Starting the Application
 
-Note: required as I built the React app in sub folder.
+To start the development server, run:
 
-### Starting the app
+```bash
+npm run dev
 
-**`npm run dev`**
+```
 
-### Testing
+This will launch the app on:
+http://localhost:5173 (or the next available port)
 
-**`npm run test`**
+##Testing
+Run the front-end tests with:
+
+```bash
+npm run test
+```
+
+This will execute component and unit tests using Jest and React Testing Library.
+
+Notes
+The front-end expects the back-end API to be running on http://localhost:5000.
+
+Basic **CRUD** operations are available: create, read, update-status, and delete tasks.
+
+Status options dynamically adjust their background color based on value.
